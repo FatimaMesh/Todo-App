@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="build todo app using html, CSS, and JavaScript"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, todo app" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <message>
+      <div aria-label="message" id="message"></div>
+    </message>
+    <main role="main">
+      <h1 aria-label="title">To Do List</h1>
+      <section id="todo_container">
+        <div class="pin"></div>
+        <div class="input_list">
+          <input
+            type="text"
+            name="input_field"
+            id="input_field"
+            placeholder="Add/edit/search your task here . . ."
+            required
+          />
+          <div aria-label="actions">
+            <button type="submit" id="add_btn" aria-label="add">
+              <em class="fa fa-plus"></em>
+            </button>
+            <button type="submit" id="search_btn" aria-label="search">
+              <em class="fa fa-search"></em>
+            </button>
+            <button type="submit" id="back_btn" aria-label="back">
+              <em class="fa fa-arrow-left"></em>
+            </button>
+            <button type="submit" id="update_btn" aria-label="update">
+              <em class="fa fa-save"></em>
+            </button>
+          </div>
+        </div>
+        <div class="todo_list">
+          <ul aria-label="list" id="list"></ul>
+        </div>
+        <p id="count_list"></p>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
